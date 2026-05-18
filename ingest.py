@@ -38,7 +38,7 @@ if __name__ == "__main__":
         "JPM", "GS", "BAC",
         "SPY", "QQQ",
         "GLD", "SLV",
-        "XLF", "XLK", "XLE"
+        "XLF", "XLK", "NVDA"
     ]
 
     start_date = "2020-01-01"
