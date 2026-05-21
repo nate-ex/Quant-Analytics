@@ -34,12 +34,13 @@ def compute_log_returns(prices: pd.DataFrame) -> pd.DataFrame:
 
 if __name__ == "__main__":
     tickers = [
-        "AAPL", "MSFT", "GOOGL", "AMZN", "META",
-        "JPM", "GS", "BAC",
-        "SPY", "QQQ",
-        "GLD", "SLV",
-        "XLF", "XLK", "NVDA"
-    ]
+    "AAPL", "MSFT", "GOOGL", "AMZN", "META",
+    "JPM", "GS", "BAC",
+    "SPY", "QQQ",
+    "GLD", "SLV",
+    "XLF", "XLK", "XLE",
+    "NVDA", "LRCX", "SPYG"
+]
 
     start_date = "2020-01-01"
     end_date   = "2024-12-31"

@@ -286,21 +286,21 @@ if __name__ == "__main__":
 
     # Parameters
     TICKER_A = "SPY"
-    TICKER_B = "QQQ"
+    TICKER_B = "SPYG"
     WINDOW   = 63
 
     print(f"\nRunning pairs backtest: {TICKER_A} / {TICKER_B}")
     print(f"Z-score window: {WINDOW} days")
-    print(f"Entry threshold: ±1.5 standard deviations")
+    print(f"Entry threshold: ±2 standard deviations")
     print(f"Exit threshold:  0.0 (mean reversion)")
 
     # Build spread and signals
     spread  = compute_spread(prices, TICKER_A, TICKER_B)
     zscore  = compute_zscore(spread, window=WINDOW)
-    signals = generate_signals(zscore, entry_threshold=1.5)
+    signals = generate_signals(zscore, entry_threshold=2)
 
     # Run backtest
-    results = run_backtest(prices, signals, TICKER_A, TICKER_B, cost_bps=2.0)
+    results = run_backtest(prices, signals, TICKER_A, TICKER_B, cost_bps=5.0)
 
     # Print metrics
     metrics = performance_metrics(results)
