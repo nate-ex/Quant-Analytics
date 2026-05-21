@@ -211,10 +211,11 @@ if __name__ == "__main__":
     prices      = pd.read_csv("prices.csv",      index_col=0, parse_dates=True)
     log_returns = pd.read_csv("log_returns.csv", index_col=0, parse_dates=True)
 
+
     # Parameters
     TICKER    = "SPY"
     WINDOW    = 21
-    THRESHOLD = 0.15
+    THRESHOLD = 0.20
     COST_BPS  = 5.0
 
     print(f"\nRunning volatility regime strategy on {TICKER}")
