@@ -8,7 +8,7 @@ def get_price_data(tickers: list, start: str, end: str) -> pd.DataFrame:
     Args:
         tickers: list of ticker strings e.g. ['AAPL', 'MSFT']
         start:   start date string e.g. '2020-01-01'
-        end:     end date string e.g. '2024-01-01'
+        end:     end date string e.g. '2026-01-01'
     
     Returns:
         DataFrame with dates as index, tickers as columns
@@ -43,7 +43,7 @@ if __name__ == "__main__":
 ]
 
     start_date = "2020-01-01"
-    end_date   = "2024-12-31"
+    end_date   = "2026-12-31"
 
     # Pull prices
     print("Downloading price data...")

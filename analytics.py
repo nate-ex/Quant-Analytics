@@ -110,7 +110,7 @@ def plot_sharpe_bars(sharpe: pd.Series) -> None:
 
     ax.axhline(0, color="black", linewidth=0.8)
     ax.axhline(1, color="green", linewidth=0.8, linestyle="--", label="Sharpe = 1 (good)")
-    ax.set_title("Annualized Sharpe Ratio by Ticker (2020–2024)", fontsize=14)
+    ax.set_title("Annualized Sharpe Ratio by Ticker (2020–2026)", fontsize=14)
     ax.set_ylabel("Sharpe Ratio")
     ax.legend()
     ax.grid(True, alpha=0.3, axis="y")
@@ -170,7 +170,7 @@ def plot_correlation_heatmap(corr_matrix: pd.DataFrame) -> None:
                     fontsize=8, color=color)
 
     plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
-    ax.set_title("Pairwise Correlation Matrix of Log Returns (2020–2024)", fontsize=13)
+    ax.set_title("Pairwise Correlation Matrix of Log Returns (2020–2026)", fontsize=13)
 
     plt.tight_layout()
     plt.savefig("correlation_heatmap.png", dpi=150)
@@ -192,7 +192,7 @@ if __name__ == "__main__":
 
     # Sharpe ratios
     sharpe = sharpe_ratio(log_returns)
-    print("Sharpe Ratios (2020-2024):")
+    print("Sharpe Ratios (2020-2026):")
     print(sharpe.sort_values(ascending=False))
 
     # Max drawdown
