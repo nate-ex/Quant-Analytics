@@ -39,7 +39,7 @@ if __name__ == "__main__":
     "SPY", "QQQ",
     "GLD", "SLV",
     "XLF", "XLK", "XLE",
-    "NVDA", "LRCX", "SPYG"
+    "NVDA", "LRCX", "SPYG", "XOM", "CVX"
 ]
 
     start_date = "2020-01-01"

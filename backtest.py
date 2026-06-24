@@ -285,8 +285,8 @@ if __name__ == "__main__":
     prices = pd.read_csv("prices.csv", index_col=0, parse_dates=True)
 
     # Parameters
-    TICKER_A = "SPY"
-    TICKER_B = "SPYG"
+    TICKER_A = "XOM"
+    TICKER_B = "CVX"
     WINDOW   = 63
 
     print(f"\nRunning pairs backtest: {TICKER_A} / {TICKER_B}")
