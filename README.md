@@ -154,5 +154,4 @@ markets. Result holds post-COVID, confirming it is not a one-event artifact.
 
 Built as part of a structured quant trading preparation program
 leading into a summer internship on the floor of the New York Stock Exchange.
-Target: quantitative trading roles at systematic trading firms
-(Jane Street, SIG)
+Target: quantitative trading roles at systematic trading firms.
